@@ -25,8 +25,8 @@
         {
             "atomType": "Molecule",
             "name": "Block",
-            "x": 0.25,
-            "y": 0.4357541899441341,
+            "x": 0.39087301587301587,
+            "y": 0.36592178770949724,
             "uniqueID": 1747970984409,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -665,8 +665,8 @@
         {
             "atomType": "Molecule",
             "name": "Bars favrite wire hook that is made of chocalate.",
-            "x": 0.10912698412698413,
-            "y": 0.7458100558659219,
+            "x": 0.10383597883597884,
+            "y": 0.7541899441340782,
             "uniqueID": 1747971076761,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -687,20 +687,6 @@
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
-                    "atomType": "Circle",
-                    "name": "Circle",
-                    "x": 0.07804232804232804,
-                    "y": 0.3519553072625698,
-                    "uniqueID": 1747971193090,
-                    "ioValues": [
-                        {
-                            "name": "diameter",
-                            "ioValue": 13
-                        }
-                    ],
-                    "description": "Creates a new circle."
-                },
-                {
                     "atomType": "Move",
                     "name": "Move",
                     "x": 0.23015873015873015,
@@ -709,7 +695,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": 1747971193090
+                            "ioValue": 1748022052888
                         },
                         {
                             "name": "xDist",
@@ -735,7 +721,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": 1747971193090
+                            "ioValue": 1748022052888
                         },
                         {
                             "name": "xDist",
@@ -755,7 +741,7 @@
                 {
                     "atomType": "ShrinkWrap",
                     "name": "Shrink Wrap",
-                    "x": 0.30687830687830686,
+                    "x": 0.3115079365079365,
                     "y": 0.2569832402234637,
                     "uniqueID": 1747971232559,
                     "ioValues": [
@@ -847,8 +833,8 @@
                 {
                     "atomType": "Fusion",
                     "name": "Fusion",
-                    "x": 0.48743386243386244,
-                    "y": 0.4944134078212291,
+                    "x": 0.49007936507936506,
+                    "y": 0.5195530726256983,
                     "uniqueID": 1747971367902,
                     "ioValues": [
                         {
@@ -1411,23 +1397,27 @@
                     ],
                     "description": "Changes the color of the shape.",
                     "selectedColorIndex": 13
+                },
+                {
+                    "atomType": "RegularPolygon",
+                    "name": "RegularPolygon",
+                    "x": 0.06547619047619048,
+                    "y": 0.21787709497206706,
+                    "uniqueID": 1748022052888,
+                    "ioValues": [
+                        {
+                            "name": "number of sides",
+                            "ioValue": 6
+                        },
+                        {
+                            "name": "diameter",
+                            "ioValue": 13
+                        }
+                    ],
+                    "description": "Creates a new regular polygon. Corners are on the diameter."
                 }
             ],
             "allConnectors": [
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 1747971193090,
-                    "ap2ID": 1747971201645
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 1747971193090,
-                    "ap2ID": 1747971215897
-                },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 2",
@@ -1511,6 +1501,20 @@
                     "ap2Primary": false,
                     "ap1ID": 1747971916097,
                     "ap2ID": 1747971076415
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1748022052888,
+                    "ap2ID": 1747971215897
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1748022052888,
+                    "ap2ID": 1747971201645
                 }
             ],
             "fileTypeVersion": 1,
@@ -1585,7 +1589,7 @@
                 },
                 {
                     "name": "Part Name",
-                    "ioValue": "Cable Bracket"
+                    "ioValue": "Bars-favrite-wood-shaped-bar-of-chocalate."
                 },
                 {
                     "name": "File Type",
