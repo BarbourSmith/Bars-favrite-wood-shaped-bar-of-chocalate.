@@ -642,7 +642,7 @@
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         },
         {
             "atomType": "Assembly",
@@ -1596,7 +1596,7 @@
             "type": "STL",
             "resolution": 96,
             "importIndex": 0,
-            "partName": "Cable Bracket"
+            "partName": "Bars-favrite-wood-shaped-bar-of-chocalate."
         }
     ],
     "allConnectors": [
