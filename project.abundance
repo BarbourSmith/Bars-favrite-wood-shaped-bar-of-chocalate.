@@ -1567,6 +1567,36 @@
                 }
             ],
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "Export",
+            "name": "Export",
+            "x": 0.16468253968253968,
+            "y": 0.38268156424581,
+            "uniqueID": 1747971980349,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1747971076761
+                },
+                {
+                    "name": "Resolution (dpi)",
+                    "ioValue": 96
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "Cable Bracket"
+                },
+                {
+                    "name": "File Type",
+                    "ioValue": "STL"
+                }
+            ],
+            "description": "Export Atom, let's you choose a type of file to Export.",
+            "type": "STL",
+            "resolution": 96,
+            "importIndex": 0,
+            "partName": "Cable Bracket"
         }
     ],
     "allConnectors": [
@@ -1590,6 +1620,13 @@
             "ap2Primary": true,
             "ap1ID": 1747971076761,
             "ap2ID": 1747971858500
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 1747971076761,
+            "ap2ID": 1747971980349
         },
         {
             "ap1Name": "geometry",
