@@ -25,8 +25,8 @@
         {
             "atomType": "Molecule",
             "name": "Block",
-            "x": 0.39087301587301587,
-            "y": 0.36592178770949724,
+            "x": 0.3923404255319149,
+            "y": 0.3642691415313225,
             "uniqueID": 1747970984409,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -619,7 +619,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 12
+                            "ioValue": 12.5
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -1601,6 +1601,325 @@
             "resolution": 96,
             "importIndex": 0,
             "partName": "Bars-favrite-wood-shaped-bar-of-chocalate."
+        },
+        {
+            "atomType": "Export",
+            "name": "Export",
+            "x": 0.8570212765957448,
+            "y": 0.20881670533642693,
+            "uniqueID": 1748138706163,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1748138827460
+                },
+                {
+                    "name": "Resolution (dpi)",
+                    "ioValue": 96
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "Bars-favrite-wood-shaped-bar-of-chocalate."
+                },
+                {
+                    "name": "File Type",
+                    "ioValue": "STL"
+                }
+            ],
+            "description": "Export Atom, let's you choose a type of file to Export.",
+            "type": "STL",
+            "resolution": 96,
+            "importIndex": 0,
+            "partName": "Bars-favrite-wood-shaped-bar-of-chocalate."
+        },
+        {
+            "atomType": "GitHubMolecule",
+            "name": "Linear-Pattern",
+            "x": 0.6025531914893617,
+            "y": 0.33178654292343385,
+            "uniqueID": 1748138781081,
+            "ioValues": [
+                {
+                    "name": "Number",
+                    "ioValue": 12
+                },
+                {
+                    "name": "Dist",
+                    "ioValue": 80
+                },
+                {
+                    "name": "Geometry",
+                    "ioValue": 1747970984409
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1748138780252,
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1748138780461
+                        }
+                    ],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Code",
+                    "name": "Code",
+                    "x": 0.5112433862433863,
+                    "y": 0.4345403899721449,
+                    "uniqueID": 1748138780461,
+                    "ioValues": [
+                        {
+                            "name": "Shape",
+                            "ioValue": 1747970984409
+                        },
+                        {
+                            "name": "Number",
+                            "ioValue": 12
+                        },
+                        {
+                            "name": "Dist",
+                            "ioValue": 80
+                        }
+                    ],
+                    "description": "Defines a Replicad code block.",
+                    "codeVersion": 1,
+                    "code": "//Inputs:[Shape, Number, Dist];\n\n\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Move(Shape, Dist * i, 0, 0);\n    shapesArray.push(rotatedShape);\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.27976190476190477,
+                    "y": 0.2116991643454039,
+                    "uniqueID": 1748138780952,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Creates a new rectangle."
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Number",
+                    "x": 0.04,
+                    "y": 0.32869080779944293,
+                    "uniqueID": 1748138780939,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Dist",
+                    "x": 0.04,
+                    "y": 0.6434540389972144,
+                    "uniqueID": 1748138780402,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Geometry",
+                    "x": 0.04,
+                    "y": 0.9108635097493036,
+                    "uniqueID": 1748138780496,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1748138780461,
+                    "ap2ID": 1748138780252
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Number",
+                    "ap2Primary": false,
+                    "ap1ID": 1748138780939,
+                    "ap2ID": 1748138780461
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Dist",
+                    "ap2Primary": false,
+                    "ap1ID": 1748138780402,
+                    "ap2ID": 1748138780461
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Shape",
+                    "ap2Primary": false,
+                    "ap1ID": 1748138780496,
+                    "ap2ID": 1748138780461
+                }
+            ],
+            "parentRepo": {
+                "lastFoundGit": "2025-03-02T16:20:37.798Z",
+                "privateRepo": false,
+                "repoName": "Linear-Pattern",
+                "dateCreated": "2025-02-19T00:40:13Z",
+                "readMe": "https://raw.githubusercontent.com/BarbourSmith/Linear-Pattern/master/README.md?sanitize=true",
+                "yyyy": 2025,
+                "topMoleculeID": 1739925613779,
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/BarbourSmith/Linear-Pattern",
+                "topics": [],
+                "parentRepo": null,
+                "forks": 0,
+                "dateModified": "739301",
+                "ranking": 0,
+                "searchField": "linear-pattern barboursmith returns the input shape formed into an assembly translated n times ",
+                "owner": "BarbourSmith",
+                "description": "Returns the input shape formed into an assembly translated n times",
+                "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Linear-Pattern/master/project.abundance?sanitize=true",
+                "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Linear-Pattern/master/project.svg?sanitize=true"
+            },
+            "unitsKey": "MM",
+            "fileTypeVersion": 1,
+            "compiledBom": []
+        },
+        {
+            "atomType": "CutLayout",
+            "name": "Cut Layout",
+            "x": 0.7268085106382979,
+            "y": 0.37354988399071926,
+            "uniqueID": 1748138827460,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1748138781081
+                },
+                {
+                    "name": "Sheet Width",
+                    "ioValue": 660.4
+                },
+                {
+                    "name": "Sheet Height",
+                    "ioValue": 914.4
+                },
+                {
+                    "name": "Part Padding",
+                    "ioValue": 6
+                }
+            ],
+            "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
+            "placements": [
+                {
+                    "translate": {
+                        "x": 35.599998474121094,
+                        "y": 78.09998321533203
+                    },
+                    "id": 12,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": 78.0999831819336,
+                        "y": 591.7992598535157
+                    },
+                    "id": 17,
+                    "rotate": 270
+                },
+                {
+                    "translate": {
+                        "x": 266.7968807947266,
+                        "y": 78.10203041806642
+                    },
+                    "id": 14,
+                    "rotate": 180
+                },
+                {
+                    "translate": {
+                        "x": 657.9933371535157,
+                        "y": 92.26353471806641
+                    },
+                    "id": 18,
+                    "rotate": 180
+                },
+                {
+                    "translate": {
+                        "x": 78.0999832180664,
+                        "y": 182.99613274648436
+                    },
+                    "id": 13,
+                    "rotate": 90
+                },
+                {
+                    "translate": {
+                        "x": -128.20153765351563,
+                        "y": 248.4392704819336
+                    },
+                    "id": 16,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": 78.0999831819336,
+                        "y": 894.1929903710937
+                    },
+                    "id": 19,
+                    "rotate": 270
+                },
+                {
+                    "translate": {
+                        "x": 78.0999831819336,
+                        "y": 645.3898631947266
+                    },
+                    "id": 15,
+                    "rotate": 270
+                },
+                {
+                    "translate": {
+                        "x": 1071.7980577710937,
+                        "y": 404.5849796180664
+                    },
+                    "id": 23,
+                    "rotate": 180
+                },
+                {
+                    "translate": {
+                        "x": -684.4000243710938,
+                        "y": 519.0867291819336
+                    },
+                    "id": 21,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": -533.2031820710938,
+                        "y": 519.0887511819336
+                    },
+                    "id": 20,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": 977.9924841710938,
+                        "y": 560.7006671180665
+                    },
+                    "id": 22,
+                    "rotate": 180
+                }
+            ]
         }
     ],
     "allConnectors": [
@@ -1610,6 +1929,13 @@
             "ap2Primary": false,
             "ap1ID": 1747970984409,
             "ap2ID": 1747971056611
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "Geometry",
+            "ap2Primary": false,
+            "ap1ID": 1747970984409,
+            "ap2ID": 1748138781081
         },
         {
             "ap1Name": "geometry",
@@ -1645,6 +1971,20 @@
             "ap2Primary": true,
             "ap1ID": 1747971858500,
             "ap2ID": 1747971850381
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 1748138781081,
+            "ap2ID": 1748138827460
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 1748138827460,
+            "ap2ID": 1748138706163
         }
     ],
     "unitsKey": "MM",
